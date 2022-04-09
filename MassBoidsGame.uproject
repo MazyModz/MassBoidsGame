@@ -1,0 +1,36 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.0EA",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "MassBoidsGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"MassEntity",
+				"MassCommon",
+				"MassActors",
+				"MassSpawner",
+				"MassSimulation",
+				"MassLOD",
+				"MassMovement",
+				"MassReplication",
+				"StructUtils",
+				"ZoneGraph"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "MassEntity",
+			"Enabled": true
+		},
+		{
+			"Name": "MassGameplay",
+			"Enabled": true
+		}
+	]
+}
