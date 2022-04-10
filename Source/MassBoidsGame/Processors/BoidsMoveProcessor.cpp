@@ -31,8 +31,8 @@ void UBoidsMoveProcessor::Execute(UMassEntitySubsystem& EntitySubsystem, FMassEx
 
 	Entities.ParallelForEachEntityChunk(EntitySubsystem, Context, [] (FMassExecutionContext& Context)
 	{
-		const TArrayView<FBoidsLocationFragment> Locations = Context.GetMutableFragmentView<FBoidsLocationFragment>();
-		const TArrayView<FMassVelocityFragment> Velocities = Context.GetMutableFragmentView<FMassVelocityFragment>();
+		const TArrayView<FBoidsLocationFragment>& Locations = Context.GetMutableFragmentView<FBoidsLocationFragment>();
+		const TArrayView<FMassVelocityFragment>& Velocities = Context.GetMutableFragmentView<FMassVelocityFragment>();
 		const TConstArrayView<FBoidsSpeedFragment>& Speeds = Context.GetFragmentView<FBoidsSpeedFragment>();
 		
 		const float DeltaTime = Context.GetDeltaTimeSeconds();

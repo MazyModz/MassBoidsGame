@@ -70,7 +70,7 @@ void UBoidsBoundsProcessor::Execute(UMassEntitySubsystem& EntitySubsystem, FMass
 
 			const bool bMaxX = Location.X > BoundingBox.Max.X;
 			const bool bMaxY = Location.Y > BoundingBox.Max.Y;
-			const bool bMaxZ =Location.Z > BoundingBox.Max.Z;
+			const bool bMaxZ = Location.Z > BoundingBox.Max.Z;
 
 			// Turn back if outside maximum bounds
 			if (bMaxX || bMaxY || bMaxZ)
